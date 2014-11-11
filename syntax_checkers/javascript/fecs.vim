@@ -16,9 +16,12 @@ endfunction
 
 function! SyntaxCheckers_javascript_fecs_GetLocList() dict
     let makeprg = self.makeprgBuild({'args': ''})
+
     let errorformat = 
-        \ '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, col%*[^0-9]%c\[:\,\] %m,' .
-        \ '%Wfecs%*[^A-Z]WARN → line%*[^0-9]%l\, col%*[^0-9]%c\[:\,\] %m'
+        \ '%Efecs%*[^A-Z]ERROR → line %l\, col %c: %m,' .
+        \  '%Wfecs%*[^A-Z]WARN → line %l\, col %c: %m,' .
+        \ '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, col%*[^0-9]%c\, rule %*\d: %m,' .
+        \  '%Wfecs%*[^A-Z]WARN → line%*[^0-9]%l\, col%*[^0-9]%c\, rule %*\d: %m'
 
     let loclist = SyntasticMake({
         \ 'defaults': {'bufnr': bufnr('%')},
