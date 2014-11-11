@@ -22,6 +22,9 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['fecs']
 " 额外参数
 let g:syntastic_javascript_fecs_args = "--reporter baidu"
+" 改变提示符号
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
 ```
 
 __Note: 请确认你已经安装了`syntastic`插件。__
