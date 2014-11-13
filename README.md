@@ -1,6 +1,6 @@
 # fecs.vim
 
-syntastic plugin for fecs
+[syntastic](https://github.com/scrooloose/syntastic) plugin for [fecs](https://github.com/ecomfe/fecs).
 
 # 用法
 
