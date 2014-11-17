@@ -12,7 +12,7 @@ Plugin 'hushicai/fecs.vim.git'
 
 然后`:PluginInstall`安装之。
 
-_实际上我们只需要把插件安装到vim runtime directories上即可。_
+_实际上我们只需要把插件安装到`vim runtime directories`上即可。_
 
 `.vimrc`配置示例：
 
