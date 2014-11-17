@@ -12,7 +12,9 @@ Plugin 'hushicai/fecs.vim.git'
 
 然后`:PluginInstall`安装之。
 
-在`.vimrc`中配置：
+_实际上我们只需要把插件安装到vim runtime directories上即可。_
+
+`.vimrc`配置示例：
 
 ```viml
 " 不建议首次打开文件时进行检查
@@ -32,6 +34,7 @@ let g:syntastic_warning_symbol = "⚠"
 
 __Note: 请确认你已经安装了`syntastic`插件。__
 
+## 其他
 
 `Errors`打开错误列表，在每一行上回车可以跳到对应的错误行。
 
