@@ -33,3 +33,6 @@ let g:syntastic_warning_symbol = "⚠"
 __Note: 请确认你已经安装了`syntastic`插件。__
 
 
+`Errors`打开错误列表，在每一行上回车可以跳到对应的错误行。
+
+`lclose`关闭错误列表。
