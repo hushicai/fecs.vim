@@ -22,8 +22,10 @@ function! SyntaxCheckers_javascript_fecs_GetLocList() dict
         \  '%Wfecs%*[^A-Z]WARN → line %l\, col %c: %m,' .
         \ '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, col%*[^0-9]%c\, rule %*\d: %m,' .
         \  '%Wfecs%*[^A-Z]WARN → line%*[^0-9]%l\, col%*[^0-9]%c\, rule %*\d: %m,' .
+        \ '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, rule %*\d: %m,' .
         \  '%Wfecs%*[^A-Z]WARN → line%*[^0-9]%l\, col%*[^0-9]%c\,%*\sJS%*\d: %m,' .
-        \  '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, col%*[^0-9]%c\,%*\sJS%*\d: %m,' 
+        \  '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\, col%*[^0-9]%c\,%*\sJS%*\d: %m,' .
+        \ '%Efecs%*[^A-Z]ERROR → line%*[^0-9]%l\,%*\sJS%*\d: %m'
 
     let loclist = SyntasticMake({
         \ 'defaults': {'bufnr': bufnr('%')},
