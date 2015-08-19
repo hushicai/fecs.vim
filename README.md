@@ -2,7 +2,7 @@
 
 [syntastic](https://github.com/scrooloose/syntastic) plugin for [fecs](https://github.com/ecomfe/fecs).
 
-# 用法
+## 用法
 
 如果你正在用vundle：
 
@@ -33,6 +33,18 @@ let g:syntastic_warning_symbol = "⚠"
 ```
 
 __Note: 请确认你已经安装了`syntastic`插件。__
+
+## 格式化
+
+![](./screenshots/1.gif)
+
+进入visual模式，选择要格式化的代码，然后输入`:FecsFormat`。
+
+当然你也可以使用设置一个key map，比如：
+
+```viml
+vnoremap <unique><silent><leader>ff :call FecsFormat()<CR>
+```
 
 ## 其他
 
