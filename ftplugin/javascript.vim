@@ -6,6 +6,8 @@ function! FecsFormat() range
     let @a = system(cmd, getline(a:firstline, a:lastline))
     " exec a:firstline . ',' . a:lastline . 'd'
     exec 'normal gv"a]p'
+    " remove last line
+    exec 'normal Gdd'
 endfunction
 
 command! -range -nargs=* FecsFormat <line1>,<line2>call FecsFormat()
